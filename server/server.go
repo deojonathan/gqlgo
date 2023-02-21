@@ -7,6 +7,7 @@ import (
 
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/playground"
+	"github.com/dgllrmo/gqlgo/server/data"
 	"github.com/dgllrmo/gqlgo/server/graph"
 )
 
@@ -17,6 +18,12 @@ func main() {
 	if port == "" {
 		port = defaultPort
 	}
+
+	data.MongoClient = data.NewDBClient()
+	if err := data.MongoClient.Connect(); err != nil {
+		log.Fatalf("Error connecting to MongoDB: %v", err)
+	}
+	defer data.MongoClient.Disconnect()
 
 	srv := handler.NewDefaultServer(graph.NewExecutableSchema(graph.Config{Resolvers: &graph.Resolver{}}))
 

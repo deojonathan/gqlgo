@@ -65,7 +65,12 @@ func (r *queryResolver) Products(ctx context.Context, first *int, after *string,
 
 // Product is the resolver for the product field.
 func (r *queryResolver) Product(ctx context.Context, id string) (*models.Product, error) {
-	panic(fmt.Errorf("not implemented: Product - product"))
+	product, err := core.Product(ctx, id)
+	if err != nil {
+		return nil, err
+	} else {
+		return product, nil
+	}
 }
 
 // Categories is the resolver for the categories field.
