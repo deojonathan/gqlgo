@@ -1,0 +1,239 @@
+# ====================================================================================
+# Filter Standard Types
+# ====================================================================================
+
+input FilterString {
+    logicalOperator: LogicalOperator
+    eq: String
+    ne: String
+    in: [String]
+    nin: [String]
+    regex: String
+    nregex: String
+}
+
+input FilterFloat {
+    logicalOperator: LogicalOperator
+    eq: Float
+    ne: Float
+    in: [Float]
+    nin: [Float]
+    gt: Float
+    gte: Float
+    lt: Float
+    lte: Float
+}
+
+input FilterInt {
+    logicalOperator: LogicalOperator
+    eq: Int
+    ne: Int
+    gt: Int
+    gte: Int
+    lt: Int
+    lte: Int
+    in: [Int]
+    nin: [Int]
+}
+
+input FilterId {
+    eq: ID
+    ne: ID
+    in: [ID]
+    nin: [ID]
+}
+
+enum LogicalOperator {
+    AND
+    OR
+}
+
+# ====================================================================================
+# Pagination and Sorting Standard Types
+# ====================================================================================
+
+interface Node {
+    id: ID!
+}
+
+interface Connection {
+    pageInfo: PageInfo!
+    edges: [Edge!]!
+}
+
+interface Edge {
+    cursor: String!
+    node: Node!
+}
+
+type PageInfo {
+    hasNextPage: Boolean!
+    hasPreviousPage: Boolean!
+    startCursor: String
+    endCursor: String
+}
+
+enum SortOrder {
+    ASC
+    DESC
+}
+
+# ====================================================================================
+# Error Standard Types
+# ====================================================================================
+
+interface Error {
+    message: String!
+}
+
+type InternalServerError implements Error {
+    message: String!
+}
+
+# ====================================================================================
+# Root API Types
+# ====================================================================================
+
+type Query {
+    products(first: Int, after: String, last: Int, before: String, filter: ProductFilter, sorting: ProductSort): ProductConnection!
+    product(id: ID!): Product!
+    categories(first: Int, after: String, last: Int, before: String, filter: CategoryFilter, sorting: CategorySort): CategoryConnection!
+    category(id: ID!): Category!
+}
+
+type Mutation {
+    createProduct(input: CreateProductInput!): CreateProductResult!
+    updateProduct(id: ID!, input: UpdateProductInput!): UpdateProductResult!
+    deleteProduct(id: ID!): DeleteProductResult!
+    createCategory(input: CreateCategoryInput!): CreateCategoryResult!
+    updateCategory(id: ID!, input: UpdateCategoryInput!): UpdateCategoryResult!
+    deleteCategory(id: ID!): DeleteCategoryResult!
+}
+
+type Subscription {
+    productCreated: Product!
+    productUpdated: Product!
+    productDeleted: ID!
+    categoryCreated: Category!
+    categoryUpdated: Category!
+    categoryDeleted: ID!
+}
+
+# ====================================================================================
+# Product API Types
+# ====================================================================================
+
+input CreateProductInput {
+    name: String!
+    price: Float!
+    description: String!
+    image: String!
+    category: ID!
+}
+
+input UpdateProductInput {
+    name: String!
+    price: Float!
+    description: String!
+    image: String!
+    category: ID!
+}
+
+input ProductFilter {
+    name: FilterString
+    price: FilterFloat
+    description: FilterString
+    image: FilterString
+    category: FilterId
+}
+
+enum ProductSortField {
+    NAME
+    PRICE
+    DESCRIPTION
+    IMAGE
+    CATEGORY
+}
+
+input ProductSort {
+    sortField: ProductSortField!
+    sortOrder: SortOrder!
+}
+
+type Product implements Node {
+    id: ID!
+    name: String!
+    price: Float!
+    description: String!
+    image: String!
+    category: Category!
+}
+
+type ProductEdge implements Edge {
+    cursor: String!
+    node: Product!
+}
+
+type ProductConnection implements Connection {
+    edges: [ProductEdge!]!
+    pageInfo: PageInfo!
+}
+
+union CreateProductResult = Product | InternalServerError
+union UpdateProductResult = Product | InternalServerError
+union DeleteProductResult = Product | InternalServerError
+
+# ====================================================================================
+# Category API Types
+# ====================================================================================
+
+input CreateCategoryInput {
+    name: String!
+}
+
+input UpdateCategoryInput {
+    name: String!
+}
+
+input CategoryFilter {
+    name: FilterString
+}
+
+enum CategorySortField {
+    NAME
+}
+
+input CategorySort {
+    sortField: CategorySortField!
+    sortOrder: SortOrder!
+}
+
+type CategoryProductsConnection implements Connection {
+    pageInfo: PageInfo!
+    edges: [CategoryProductsEdge!]!
+}
+
+type CategoryProductsEdge implements Edge {
+    cursor: String!
+    node: Product!
+}
+
+type Category implements Node {
+    id: ID!
+    name: String!
+    productsConnection(first: Int, before: String, last: Int, filter: ProductFilter, sorting: ProductSort): CategoryProductsConnection!
+}
+
+type CategoryEdge implements Edge {
+    cursor: String!
+    node: Category!
+}
+
+type CategoryConnection implements Connection {
+    edges: [CategoryEdge!]!
+    pageInfo: PageInfo!
+}
+
+union CreateCategoryResult = Category | InternalServerError
+union UpdateCategoryResult = Category | InternalServerError
+union DeleteCategoryResult = Category | InternalServerError
