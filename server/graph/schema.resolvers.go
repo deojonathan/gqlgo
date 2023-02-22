@@ -8,8 +8,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/dgllrmo/gqlgo/server/core"
-	"github.com/dgllrmo/gqlgo/server/graph/models"
+	"github.com/dgmo/gqlgo/server/core"
+	"github.com/dgmo/gqlgo/server/graph/models"
 )
 
 // CreateProduct is the resolver for the createProduct field.

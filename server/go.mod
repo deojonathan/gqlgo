@@ -1,4 +1,4 @@
-module github.com/dgllrmo/gqlgo/server
+module github.com/dgmo/gqlgo/server
 
 go 1.20
 
@@ -35,8 +35,8 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/dgllrmo/gqlgo/server/core => /Users/dguillermo/Developer/github.com/dgllrmo/gqlgo/server/core
+replace github.com/dgmo/gqlgo/server/core => /Users/dguillermo/Developer/github.com/dgmo/gqlgo/server/core
 
-replace github.com/dgllrmo/gqlgo/server/graph => /Users/dguillermo/Developer/github.com/dgllrmo/gqlgo/server/graph
+replace github.com/dgmo/gqlgo/server/graph => /Users/dguillermo/Developer/github.com/dgmo/gqlgo/server/graph
 
-replace github.com/dgllrmo/gqlgo/server/graph/models => /Users/dguillermo/Developer/github.com/dgllrmo/gqlgo/server/graph/models
+replace github.com/dgmo/gqlgo/server/graph/models => /Users/dguillermo/Developer/github.com/dgmo/gqlgo/server/graph/models

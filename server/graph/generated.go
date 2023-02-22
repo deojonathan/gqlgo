@@ -14,7 +14,7 @@ import (
 
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/introspection"
-	"github.com/dgllrmo/gqlgo/server/graph/models"
+	"github.com/dgmo/gqlgo/server/graph/models"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 )
@@ -664,7 +664,7 @@ func (ec *executionContext) field_Category_productsConnection_args(ctx context.C
 	var arg3 *models.ProductFilter
 	if tmp, ok := rawArgs["filter"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("filter"))
-		arg3, err = ec.unmarshalOProductFilter2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductFilter(ctx, tmp)
+		arg3, err = ec.unmarshalOProductFilter2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductFilter(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -673,7 +673,7 @@ func (ec *executionContext) field_Category_productsConnection_args(ctx context.C
 	var arg4 *models.ProductSort
 	if tmp, ok := rawArgs["sorting"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("sorting"))
-		arg4, err = ec.unmarshalOProductSort2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSort(ctx, tmp)
+		arg4, err = ec.unmarshalOProductSort2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSort(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -688,7 +688,7 @@ func (ec *executionContext) field_Mutation_createCategory_args(ctx context.Conte
 	var arg0 models.CreateCategoryInput
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg0, err = ec.unmarshalNCreateCategoryInput2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateCategoryInput(ctx, tmp)
+		arg0, err = ec.unmarshalNCreateCategoryInput2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateCategoryInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -703,7 +703,7 @@ func (ec *executionContext) field_Mutation_createProduct_args(ctx context.Contex
 	var arg0 models.CreateProductInput
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg0, err = ec.unmarshalNCreateProductInput2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateProductInput(ctx, tmp)
+		arg0, err = ec.unmarshalNCreateProductInput2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateProductInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -757,7 +757,7 @@ func (ec *executionContext) field_Mutation_updateCategory_args(ctx context.Conte
 	var arg1 models.UpdateCategoryInput
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg1, err = ec.unmarshalNUpdateCategoryInput2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateCategoryInput(ctx, tmp)
+		arg1, err = ec.unmarshalNUpdateCategoryInput2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateCategoryInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -781,7 +781,7 @@ func (ec *executionContext) field_Mutation_updateProduct_args(ctx context.Contex
 	var arg1 models.UpdateProductInput
 	if tmp, ok := rawArgs["input"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("input"))
-		arg1, err = ec.unmarshalNUpdateProductInput2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateProductInput(ctx, tmp)
+		arg1, err = ec.unmarshalNUpdateProductInput2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateProductInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -847,7 +847,7 @@ func (ec *executionContext) field_Query_categories_args(ctx context.Context, raw
 	var arg4 *models.CategoryFilter
 	if tmp, ok := rawArgs["filter"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("filter"))
-		arg4, err = ec.unmarshalOCategoryFilter2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryFilter(ctx, tmp)
+		arg4, err = ec.unmarshalOCategoryFilter2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryFilter(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -856,7 +856,7 @@ func (ec *executionContext) field_Query_categories_args(ctx context.Context, raw
 	var arg5 *models.CategorySort
 	if tmp, ok := rawArgs["sorting"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("sorting"))
-		arg5, err = ec.unmarshalOCategorySort2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategorySort(ctx, tmp)
+		arg5, err = ec.unmarshalOCategorySort2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategorySort(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -937,7 +937,7 @@ func (ec *executionContext) field_Query_products_args(ctx context.Context, rawAr
 	var arg4 *models.ProductFilter
 	if tmp, ok := rawArgs["filter"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("filter"))
-		arg4, err = ec.unmarshalOProductFilter2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductFilter(ctx, tmp)
+		arg4, err = ec.unmarshalOProductFilter2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductFilter(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -946,7 +946,7 @@ func (ec *executionContext) field_Query_products_args(ctx context.Context, rawAr
 	var arg5 *models.ProductSort
 	if tmp, ok := rawArgs["sorting"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("sorting"))
-		arg5, err = ec.unmarshalOProductSort2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSort(ctx, tmp)
+		arg5, err = ec.unmarshalOProductSort2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSort(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -1109,7 +1109,7 @@ func (ec *executionContext) _Category_productsConnection(ctx context.Context, fi
 	}
 	res := resTmp.(*models.CategoryProductsConnection)
 	fc.Result = res
-	return ec.marshalNCategoryProductsConnection2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsConnection(ctx, field.Selections, res)
+	return ec.marshalNCategoryProductsConnection2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsConnection(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Category_productsConnection(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1170,7 +1170,7 @@ func (ec *executionContext) _CategoryConnection_edges(ctx context.Context, field
 	}
 	res := resTmp.([]*models.CategoryEdge)
 	fc.Result = res
-	return ec.marshalNCategoryEdge2ᚕᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryEdgeᚄ(ctx, field.Selections, res)
+	return ec.marshalNCategoryEdge2ᚕᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryEdgeᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_CategoryConnection_edges(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1220,7 +1220,7 @@ func (ec *executionContext) _CategoryConnection_pageInfo(ctx context.Context, fi
 	}
 	res := resTmp.(*models.PageInfo)
 	fc.Result = res
-	return ec.marshalNPageInfo2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐPageInfo(ctx, field.Selections, res)
+	return ec.marshalNPageInfo2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐPageInfo(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_CategoryConnection_pageInfo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1318,7 +1318,7 @@ func (ec *executionContext) _CategoryEdge_node(ctx context.Context, field graphq
 	}
 	res := resTmp.(*models.Category)
 	fc.Result = res
-	return ec.marshalNCategory2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx, field.Selections, res)
+	return ec.marshalNCategory2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_CategoryEdge_node(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1370,7 +1370,7 @@ func (ec *executionContext) _CategoryProductsConnection_pageInfo(ctx context.Con
 	}
 	res := resTmp.(*models.PageInfo)
 	fc.Result = res
-	return ec.marshalNPageInfo2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐPageInfo(ctx, field.Selections, res)
+	return ec.marshalNPageInfo2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐPageInfo(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_CategoryProductsConnection_pageInfo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1424,7 +1424,7 @@ func (ec *executionContext) _CategoryProductsConnection_edges(ctx context.Contex
 	}
 	res := resTmp.([]*models.CategoryProductsEdge)
 	fc.Result = res
-	return ec.marshalNCategoryProductsEdge2ᚕᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsEdgeᚄ(ctx, field.Selections, res)
+	return ec.marshalNCategoryProductsEdge2ᚕᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsEdgeᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_CategoryProductsConnection_edges(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1518,7 +1518,7 @@ func (ec *executionContext) _CategoryProductsEdge_node(ctx context.Context, fiel
 	}
 	res := resTmp.(*models.Product)
 	fc.Result = res
-	return ec.marshalNProduct2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx, field.Selections, res)
+	return ec.marshalNProduct2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_CategoryProductsEdge_node(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1619,7 +1619,7 @@ func (ec *executionContext) _Mutation_createProduct(ctx context.Context, field g
 	}
 	res := resTmp.(models.CreateProductResult)
 	fc.Result = res
-	return ec.marshalNCreateProductResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateProductResult(ctx, field.Selections, res)
+	return ec.marshalNCreateProductResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateProductResult(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_createProduct(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1673,7 +1673,7 @@ func (ec *executionContext) _Mutation_updateProduct(ctx context.Context, field g
 	}
 	res := resTmp.(models.UpdateProductResult)
 	fc.Result = res
-	return ec.marshalNUpdateProductResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateProductResult(ctx, field.Selections, res)
+	return ec.marshalNUpdateProductResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateProductResult(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_updateProduct(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1727,7 +1727,7 @@ func (ec *executionContext) _Mutation_deleteProduct(ctx context.Context, field g
 	}
 	res := resTmp.(models.DeleteProductResult)
 	fc.Result = res
-	return ec.marshalNDeleteProductResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐDeleteProductResult(ctx, field.Selections, res)
+	return ec.marshalNDeleteProductResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐDeleteProductResult(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_deleteProduct(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1781,7 +1781,7 @@ func (ec *executionContext) _Mutation_createCategory(ctx context.Context, field 
 	}
 	res := resTmp.(models.CreateCategoryResult)
 	fc.Result = res
-	return ec.marshalNCreateCategoryResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateCategoryResult(ctx, field.Selections, res)
+	return ec.marshalNCreateCategoryResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateCategoryResult(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_createCategory(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1835,7 +1835,7 @@ func (ec *executionContext) _Mutation_updateCategory(ctx context.Context, field 
 	}
 	res := resTmp.(models.UpdateCategoryResult)
 	fc.Result = res
-	return ec.marshalNUpdateCategoryResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateCategoryResult(ctx, field.Selections, res)
+	return ec.marshalNUpdateCategoryResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateCategoryResult(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_updateCategory(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1889,7 +1889,7 @@ func (ec *executionContext) _Mutation_deleteCategory(ctx context.Context, field 
 	}
 	res := resTmp.(models.DeleteCategoryResult)
 	fc.Result = res
-	return ec.marshalNDeleteCategoryResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐDeleteCategoryResult(ctx, field.Selections, res)
+	return ec.marshalNDeleteCategoryResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐDeleteCategoryResult(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_deleteCategory(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2334,7 +2334,7 @@ func (ec *executionContext) _Product_category(ctx context.Context, field graphql
 	}
 	res := resTmp.(*models.Category)
 	fc.Result = res
-	return ec.marshalNCategory2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx, field.Selections, res)
+	return ec.marshalNCategory2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Product_category(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2386,7 +2386,7 @@ func (ec *executionContext) _ProductConnection_edges(ctx context.Context, field 
 	}
 	res := resTmp.([]*models.ProductEdge)
 	fc.Result = res
-	return ec.marshalNProductEdge2ᚕᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductEdgeᚄ(ctx, field.Selections, res)
+	return ec.marshalNProductEdge2ᚕᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductEdgeᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_ProductConnection_edges(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2436,7 +2436,7 @@ func (ec *executionContext) _ProductConnection_pageInfo(ctx context.Context, fie
 	}
 	res := resTmp.(*models.PageInfo)
 	fc.Result = res
-	return ec.marshalNPageInfo2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐPageInfo(ctx, field.Selections, res)
+	return ec.marshalNPageInfo2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐPageInfo(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_ProductConnection_pageInfo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2534,7 +2534,7 @@ func (ec *executionContext) _ProductEdge_node(ctx context.Context, field graphql
 	}
 	res := resTmp.(*models.Product)
 	fc.Result = res
-	return ec.marshalNProduct2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx, field.Selections, res)
+	return ec.marshalNProduct2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_ProductEdge_node(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2591,7 +2591,7 @@ func (ec *executionContext) _Query_products(ctx context.Context, field graphql.C
 	}
 	res := resTmp.(*models.ProductConnection)
 	fc.Result = res
-	return ec.marshalNProductConnection2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductConnection(ctx, field.Selections, res)
+	return ec.marshalNProductConnection2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductConnection(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_products(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2651,7 +2651,7 @@ func (ec *executionContext) _Query_product(ctx context.Context, field graphql.Co
 	}
 	res := resTmp.(*models.Product)
 	fc.Result = res
-	return ec.marshalNProduct2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx, field.Selections, res)
+	return ec.marshalNProduct2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_product(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2719,7 +2719,7 @@ func (ec *executionContext) _Query_categories(ctx context.Context, field graphql
 	}
 	res := resTmp.(*models.CategoryConnection)
 	fc.Result = res
-	return ec.marshalNCategoryConnection2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryConnection(ctx, field.Selections, res)
+	return ec.marshalNCategoryConnection2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryConnection(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_categories(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2779,7 +2779,7 @@ func (ec *executionContext) _Query_category(ctx context.Context, field graphql.C
 	}
 	res := resTmp.(*models.Category)
 	fc.Result = res
-	return ec.marshalNCategory2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx, field.Selections, res)
+	return ec.marshalNCategory2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_category(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -2976,7 +2976,7 @@ func (ec *executionContext) _Subscription_productCreated(ctx context.Context, fi
 				w.Write([]byte{'{'})
 				graphql.MarshalString(field.Alias).MarshalGQL(w)
 				w.Write([]byte{':'})
-				ec.marshalNProduct2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
+				ec.marshalNProduct2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
 				w.Write([]byte{'}'})
 			})
 		case <-ctx.Done():
@@ -3047,7 +3047,7 @@ func (ec *executionContext) _Subscription_productUpdated(ctx context.Context, fi
 				w.Write([]byte{'{'})
 				graphql.MarshalString(field.Alias).MarshalGQL(w)
 				w.Write([]byte{':'})
-				ec.marshalNProduct2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
+				ec.marshalNProduct2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx, field.Selections, res).MarshalGQL(w)
 				w.Write([]byte{'}'})
 			})
 		case <-ctx.Done():
@@ -3175,7 +3175,7 @@ func (ec *executionContext) _Subscription_categoryCreated(ctx context.Context, f
 				w.Write([]byte{'{'})
 				graphql.MarshalString(field.Alias).MarshalGQL(w)
 				w.Write([]byte{':'})
-				ec.marshalNCategory2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx, field.Selections, res).MarshalGQL(w)
+				ec.marshalNCategory2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx, field.Selections, res).MarshalGQL(w)
 				w.Write([]byte{'}'})
 			})
 		case <-ctx.Done():
@@ -3240,7 +3240,7 @@ func (ec *executionContext) _Subscription_categoryUpdated(ctx context.Context, f
 				w.Write([]byte{'{'})
 				graphql.MarshalString(field.Alias).MarshalGQL(w)
 				w.Write([]byte{':'})
-				ec.marshalNCategory2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx, field.Selections, res).MarshalGQL(w)
+				ec.marshalNCategory2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx, field.Selections, res).MarshalGQL(w)
 				w.Write([]byte{'}'})
 			})
 		case <-ctx.Done():
@@ -5118,7 +5118,7 @@ func (ec *executionContext) unmarshalInputCategoryFilter(ctx context.Context, ob
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("name"))
-			it.Name, err = ec.unmarshalOFilterString2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterString(ctx, v)
+			it.Name, err = ec.unmarshalOFilterString2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterString(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5146,7 +5146,7 @@ func (ec *executionContext) unmarshalInputCategorySort(ctx context.Context, obj 
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("sortField"))
-			it.SortField, err = ec.unmarshalNCategorySortField2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategorySortField(ctx, v)
+			it.SortField, err = ec.unmarshalNCategorySortField2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategorySortField(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5154,7 +5154,7 @@ func (ec *executionContext) unmarshalInputCategorySort(ctx context.Context, obj 
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("sortOrder"))
-			it.SortOrder, err = ec.unmarshalNSortOrder2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐSortOrder(ctx, v)
+			it.SortOrder, err = ec.unmarshalNSortOrder2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐSortOrder(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5270,7 +5270,7 @@ func (ec *executionContext) unmarshalInputFilterFloat(ctx context.Context, obj i
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("logicalOperator"))
-			it.LogicalOperator, err = ec.unmarshalOLogicalOperator2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐLogicalOperator(ctx, v)
+			it.LogicalOperator, err = ec.unmarshalOLogicalOperator2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐLogicalOperator(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5414,7 +5414,7 @@ func (ec *executionContext) unmarshalInputFilterInt(ctx context.Context, obj int
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("logicalOperator"))
-			it.LogicalOperator, err = ec.unmarshalOLogicalOperator2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐLogicalOperator(ctx, v)
+			it.LogicalOperator, err = ec.unmarshalOLogicalOperator2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐLogicalOperator(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5506,7 +5506,7 @@ func (ec *executionContext) unmarshalInputFilterString(ctx context.Context, obj 
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("logicalOperator"))
-			it.LogicalOperator, err = ec.unmarshalOLogicalOperator2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐLogicalOperator(ctx, v)
+			it.LogicalOperator, err = ec.unmarshalOLogicalOperator2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐLogicalOperator(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5582,7 +5582,7 @@ func (ec *executionContext) unmarshalInputProductFilter(ctx context.Context, obj
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("name"))
-			it.Name, err = ec.unmarshalOFilterString2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterString(ctx, v)
+			it.Name, err = ec.unmarshalOFilterString2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterString(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5590,7 +5590,7 @@ func (ec *executionContext) unmarshalInputProductFilter(ctx context.Context, obj
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("price"))
-			it.Price, err = ec.unmarshalOFilterFloat2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterFloat(ctx, v)
+			it.Price, err = ec.unmarshalOFilterFloat2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterFloat(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5598,7 +5598,7 @@ func (ec *executionContext) unmarshalInputProductFilter(ctx context.Context, obj
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("description"))
-			it.Description, err = ec.unmarshalOFilterString2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterString(ctx, v)
+			it.Description, err = ec.unmarshalOFilterString2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterString(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5606,7 +5606,7 @@ func (ec *executionContext) unmarshalInputProductFilter(ctx context.Context, obj
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("image"))
-			it.Image, err = ec.unmarshalOFilterString2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterString(ctx, v)
+			it.Image, err = ec.unmarshalOFilterString2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterString(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5614,7 +5614,7 @@ func (ec *executionContext) unmarshalInputProductFilter(ctx context.Context, obj
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("category"))
-			it.Category, err = ec.unmarshalOFilterId2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterID(ctx, v)
+			it.Category, err = ec.unmarshalOFilterId2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterID(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5642,7 +5642,7 @@ func (ec *executionContext) unmarshalInputProductSort(ctx context.Context, obj i
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("sortField"))
-			it.SortField, err = ec.unmarshalNProductSortField2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSortField(ctx, v)
+			it.SortField, err = ec.unmarshalNProductSortField2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSortField(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -5650,7 +5650,7 @@ func (ec *executionContext) unmarshalInputProductSort(ctx context.Context, obj i
 			var err error
 
 			ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("sortOrder"))
-			it.SortOrder, err = ec.unmarshalNSortOrder2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐSortOrder(ctx, v)
+			it.SortOrder, err = ec.unmarshalNSortOrder2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐSortOrder(ctx, v)
 			if err != nil {
 				return it, err
 			}
@@ -6922,11 +6922,11 @@ func (ec *executionContext) marshalNBoolean2bool(ctx context.Context, sel ast.Se
 	return res
 }
 
-func (ec *executionContext) marshalNCategory2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx context.Context, sel ast.SelectionSet, v models.Category) graphql.Marshaler {
+func (ec *executionContext) marshalNCategory2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx context.Context, sel ast.SelectionSet, v models.Category) graphql.Marshaler {
 	return ec._Category(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNCategory2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx context.Context, sel ast.SelectionSet, v *models.Category) graphql.Marshaler {
+func (ec *executionContext) marshalNCategory2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategory(ctx context.Context, sel ast.SelectionSet, v *models.Category) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -6936,11 +6936,11 @@ func (ec *executionContext) marshalNCategory2ᚖgithubᚗcomᚋdgllrmoᚋgqlgo�
 	return ec._Category(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNCategoryConnection2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryConnection(ctx context.Context, sel ast.SelectionSet, v models.CategoryConnection) graphql.Marshaler {
+func (ec *executionContext) marshalNCategoryConnection2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryConnection(ctx context.Context, sel ast.SelectionSet, v models.CategoryConnection) graphql.Marshaler {
 	return ec._CategoryConnection(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNCategoryConnection2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryConnection(ctx context.Context, sel ast.SelectionSet, v *models.CategoryConnection) graphql.Marshaler {
+func (ec *executionContext) marshalNCategoryConnection2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryConnection(ctx context.Context, sel ast.SelectionSet, v *models.CategoryConnection) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -6950,7 +6950,7 @@ func (ec *executionContext) marshalNCategoryConnection2ᚖgithubᚗcomᚋdgllrmo
 	return ec._CategoryConnection(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNCategoryEdge2ᚕᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryEdgeᚄ(ctx context.Context, sel ast.SelectionSet, v []*models.CategoryEdge) graphql.Marshaler {
+func (ec *executionContext) marshalNCategoryEdge2ᚕᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryEdgeᚄ(ctx context.Context, sel ast.SelectionSet, v []*models.CategoryEdge) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -6974,7 +6974,7 @@ func (ec *executionContext) marshalNCategoryEdge2ᚕᚖgithubᚗcomᚋdgllrmoᚋ
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNCategoryEdge2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryEdge(ctx, sel, v[i])
+			ret[i] = ec.marshalNCategoryEdge2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryEdge(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -6994,7 +6994,7 @@ func (ec *executionContext) marshalNCategoryEdge2ᚕᚖgithubᚗcomᚋdgllrmoᚋ
 	return ret
 }
 
-func (ec *executionContext) marshalNCategoryEdge2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryEdge(ctx context.Context, sel ast.SelectionSet, v *models.CategoryEdge) graphql.Marshaler {
+func (ec *executionContext) marshalNCategoryEdge2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryEdge(ctx context.Context, sel ast.SelectionSet, v *models.CategoryEdge) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7004,7 +7004,7 @@ func (ec *executionContext) marshalNCategoryEdge2ᚖgithubᚗcomᚋdgllrmoᚋgql
 	return ec._CategoryEdge(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNCategoryProductsConnection2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsConnection(ctx context.Context, sel ast.SelectionSet, v *models.CategoryProductsConnection) graphql.Marshaler {
+func (ec *executionContext) marshalNCategoryProductsConnection2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsConnection(ctx context.Context, sel ast.SelectionSet, v *models.CategoryProductsConnection) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7014,7 +7014,7 @@ func (ec *executionContext) marshalNCategoryProductsConnection2ᚖgithubᚗcom�
 	return ec._CategoryProductsConnection(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNCategoryProductsEdge2ᚕᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsEdgeᚄ(ctx context.Context, sel ast.SelectionSet, v []*models.CategoryProductsEdge) graphql.Marshaler {
+func (ec *executionContext) marshalNCategoryProductsEdge2ᚕᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsEdgeᚄ(ctx context.Context, sel ast.SelectionSet, v []*models.CategoryProductsEdge) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -7038,7 +7038,7 @@ func (ec *executionContext) marshalNCategoryProductsEdge2ᚕᚖgithubᚗcomᚋdg
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNCategoryProductsEdge2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsEdge(ctx, sel, v[i])
+			ret[i] = ec.marshalNCategoryProductsEdge2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsEdge(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -7058,7 +7058,7 @@ func (ec *executionContext) marshalNCategoryProductsEdge2ᚕᚖgithubᚗcomᚋdg
 	return ret
 }
 
-func (ec *executionContext) marshalNCategoryProductsEdge2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsEdge(ctx context.Context, sel ast.SelectionSet, v *models.CategoryProductsEdge) graphql.Marshaler {
+func (ec *executionContext) marshalNCategoryProductsEdge2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryProductsEdge(ctx context.Context, sel ast.SelectionSet, v *models.CategoryProductsEdge) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7068,22 +7068,22 @@ func (ec *executionContext) marshalNCategoryProductsEdge2ᚖgithubᚗcomᚋdgllr
 	return ec._CategoryProductsEdge(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNCategorySortField2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategorySortField(ctx context.Context, v interface{}) (models.CategorySortField, error) {
+func (ec *executionContext) unmarshalNCategorySortField2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategorySortField(ctx context.Context, v interface{}) (models.CategorySortField, error) {
 	var res models.CategorySortField
 	err := res.UnmarshalGQL(v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNCategorySortField2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategorySortField(ctx context.Context, sel ast.SelectionSet, v models.CategorySortField) graphql.Marshaler {
+func (ec *executionContext) marshalNCategorySortField2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategorySortField(ctx context.Context, sel ast.SelectionSet, v models.CategorySortField) graphql.Marshaler {
 	return v
 }
 
-func (ec *executionContext) unmarshalNCreateCategoryInput2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateCategoryInput(ctx context.Context, v interface{}) (models.CreateCategoryInput, error) {
+func (ec *executionContext) unmarshalNCreateCategoryInput2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateCategoryInput(ctx context.Context, v interface{}) (models.CreateCategoryInput, error) {
 	res, err := ec.unmarshalInputCreateCategoryInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNCreateCategoryResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateCategoryResult(ctx context.Context, sel ast.SelectionSet, v models.CreateCategoryResult) graphql.Marshaler {
+func (ec *executionContext) marshalNCreateCategoryResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateCategoryResult(ctx context.Context, sel ast.SelectionSet, v models.CreateCategoryResult) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7093,12 +7093,12 @@ func (ec *executionContext) marshalNCreateCategoryResult2githubᚗcomᚋdgllrmo�
 	return ec._CreateCategoryResult(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNCreateProductInput2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateProductInput(ctx context.Context, v interface{}) (models.CreateProductInput, error) {
+func (ec *executionContext) unmarshalNCreateProductInput2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateProductInput(ctx context.Context, v interface{}) (models.CreateProductInput, error) {
 	res, err := ec.unmarshalInputCreateProductInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNCreateProductResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateProductResult(ctx context.Context, sel ast.SelectionSet, v models.CreateProductResult) graphql.Marshaler {
+func (ec *executionContext) marshalNCreateProductResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCreateProductResult(ctx context.Context, sel ast.SelectionSet, v models.CreateProductResult) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7108,7 +7108,7 @@ func (ec *executionContext) marshalNCreateProductResult2githubᚗcomᚋdgllrmo�
 	return ec._CreateProductResult(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNDeleteCategoryResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐDeleteCategoryResult(ctx context.Context, sel ast.SelectionSet, v models.DeleteCategoryResult) graphql.Marshaler {
+func (ec *executionContext) marshalNDeleteCategoryResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐDeleteCategoryResult(ctx context.Context, sel ast.SelectionSet, v models.DeleteCategoryResult) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7118,7 +7118,7 @@ func (ec *executionContext) marshalNDeleteCategoryResult2githubᚗcomᚋdgllrmo�
 	return ec._DeleteCategoryResult(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNDeleteProductResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐDeleteProductResult(ctx context.Context, sel ast.SelectionSet, v models.DeleteProductResult) graphql.Marshaler {
+func (ec *executionContext) marshalNDeleteProductResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐDeleteProductResult(ctx context.Context, sel ast.SelectionSet, v models.DeleteProductResult) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7158,7 +7158,7 @@ func (ec *executionContext) marshalNID2string(ctx context.Context, sel ast.Selec
 	return res
 }
 
-func (ec *executionContext) marshalNPageInfo2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐPageInfo(ctx context.Context, sel ast.SelectionSet, v *models.PageInfo) graphql.Marshaler {
+func (ec *executionContext) marshalNPageInfo2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐPageInfo(ctx context.Context, sel ast.SelectionSet, v *models.PageInfo) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7168,11 +7168,11 @@ func (ec *executionContext) marshalNPageInfo2ᚖgithubᚗcomᚋdgllrmoᚋgqlgo�
 	return ec._PageInfo(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNProduct2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx context.Context, sel ast.SelectionSet, v models.Product) graphql.Marshaler {
+func (ec *executionContext) marshalNProduct2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx context.Context, sel ast.SelectionSet, v models.Product) graphql.Marshaler {
 	return ec._Product(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNProduct2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx context.Context, sel ast.SelectionSet, v *models.Product) graphql.Marshaler {
+func (ec *executionContext) marshalNProduct2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProduct(ctx context.Context, sel ast.SelectionSet, v *models.Product) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7182,11 +7182,11 @@ func (ec *executionContext) marshalNProduct2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋ
 	return ec._Product(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNProductConnection2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductConnection(ctx context.Context, sel ast.SelectionSet, v models.ProductConnection) graphql.Marshaler {
+func (ec *executionContext) marshalNProductConnection2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductConnection(ctx context.Context, sel ast.SelectionSet, v models.ProductConnection) graphql.Marshaler {
 	return ec._ProductConnection(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNProductConnection2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductConnection(ctx context.Context, sel ast.SelectionSet, v *models.ProductConnection) graphql.Marshaler {
+func (ec *executionContext) marshalNProductConnection2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductConnection(ctx context.Context, sel ast.SelectionSet, v *models.ProductConnection) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7196,7 +7196,7 @@ func (ec *executionContext) marshalNProductConnection2ᚖgithubᚗcomᚋdgllrmo�
 	return ec._ProductConnection(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalNProductEdge2ᚕᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductEdgeᚄ(ctx context.Context, sel ast.SelectionSet, v []*models.ProductEdge) graphql.Marshaler {
+func (ec *executionContext) marshalNProductEdge2ᚕᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductEdgeᚄ(ctx context.Context, sel ast.SelectionSet, v []*models.ProductEdge) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -7220,7 +7220,7 @@ func (ec *executionContext) marshalNProductEdge2ᚕᚖgithubᚗcomᚋdgllrmoᚋg
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNProductEdge2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductEdge(ctx, sel, v[i])
+			ret[i] = ec.marshalNProductEdge2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductEdge(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -7240,7 +7240,7 @@ func (ec *executionContext) marshalNProductEdge2ᚕᚖgithubᚗcomᚋdgllrmoᚋg
 	return ret
 }
 
-func (ec *executionContext) marshalNProductEdge2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductEdge(ctx context.Context, sel ast.SelectionSet, v *models.ProductEdge) graphql.Marshaler {
+func (ec *executionContext) marshalNProductEdge2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductEdge(ctx context.Context, sel ast.SelectionSet, v *models.ProductEdge) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7250,23 +7250,23 @@ func (ec *executionContext) marshalNProductEdge2ᚖgithubᚗcomᚋdgllrmoᚋgqlg
 	return ec._ProductEdge(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNProductSortField2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSortField(ctx context.Context, v interface{}) (models.ProductSortField, error) {
+func (ec *executionContext) unmarshalNProductSortField2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSortField(ctx context.Context, v interface{}) (models.ProductSortField, error) {
 	var res models.ProductSortField
 	err := res.UnmarshalGQL(v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNProductSortField2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSortField(ctx context.Context, sel ast.SelectionSet, v models.ProductSortField) graphql.Marshaler {
+func (ec *executionContext) marshalNProductSortField2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSortField(ctx context.Context, sel ast.SelectionSet, v models.ProductSortField) graphql.Marshaler {
 	return v
 }
 
-func (ec *executionContext) unmarshalNSortOrder2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐSortOrder(ctx context.Context, v interface{}) (models.SortOrder, error) {
+func (ec *executionContext) unmarshalNSortOrder2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐSortOrder(ctx context.Context, v interface{}) (models.SortOrder, error) {
 	var res models.SortOrder
 	err := res.UnmarshalGQL(v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNSortOrder2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐSortOrder(ctx context.Context, sel ast.SelectionSet, v models.SortOrder) graphql.Marshaler {
+func (ec *executionContext) marshalNSortOrder2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐSortOrder(ctx context.Context, sel ast.SelectionSet, v models.SortOrder) graphql.Marshaler {
 	return v
 }
 
@@ -7285,12 +7285,12 @@ func (ec *executionContext) marshalNString2string(ctx context.Context, sel ast.S
 	return res
 }
 
-func (ec *executionContext) unmarshalNUpdateCategoryInput2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateCategoryInput(ctx context.Context, v interface{}) (models.UpdateCategoryInput, error) {
+func (ec *executionContext) unmarshalNUpdateCategoryInput2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateCategoryInput(ctx context.Context, v interface{}) (models.UpdateCategoryInput, error) {
 	res, err := ec.unmarshalInputUpdateCategoryInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNUpdateCategoryResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateCategoryResult(ctx context.Context, sel ast.SelectionSet, v models.UpdateCategoryResult) graphql.Marshaler {
+func (ec *executionContext) marshalNUpdateCategoryResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateCategoryResult(ctx context.Context, sel ast.SelectionSet, v models.UpdateCategoryResult) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7300,12 +7300,12 @@ func (ec *executionContext) marshalNUpdateCategoryResult2githubᚗcomᚋdgllrmo�
 	return ec._UpdateCategoryResult(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNUpdateProductInput2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateProductInput(ctx context.Context, v interface{}) (models.UpdateProductInput, error) {
+func (ec *executionContext) unmarshalNUpdateProductInput2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateProductInput(ctx context.Context, v interface{}) (models.UpdateProductInput, error) {
 	res, err := ec.unmarshalInputUpdateProductInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNUpdateProductResult2githubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateProductResult(ctx context.Context, sel ast.SelectionSet, v models.UpdateProductResult) graphql.Marshaler {
+func (ec *executionContext) marshalNUpdateProductResult2githubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐUpdateProductResult(ctx context.Context, sel ast.SelectionSet, v models.UpdateProductResult) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -7594,7 +7594,7 @@ func (ec *executionContext) marshalOBoolean2ᚖbool(ctx context.Context, sel ast
 	return res
 }
 
-func (ec *executionContext) unmarshalOCategoryFilter2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryFilter(ctx context.Context, v interface{}) (*models.CategoryFilter, error) {
+func (ec *executionContext) unmarshalOCategoryFilter2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategoryFilter(ctx context.Context, v interface{}) (*models.CategoryFilter, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -7602,7 +7602,7 @@ func (ec *executionContext) unmarshalOCategoryFilter2ᚖgithubᚗcomᚋdgllrmo�
 	return &res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalOCategorySort2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategorySort(ctx context.Context, v interface{}) (*models.CategorySort, error) {
+func (ec *executionContext) unmarshalOCategorySort2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐCategorySort(ctx context.Context, v interface{}) (*models.CategorySort, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -7610,7 +7610,7 @@ func (ec *executionContext) unmarshalOCategorySort2ᚖgithubᚗcomᚋdgllrmoᚋg
 	return &res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalOFilterFloat2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterFloat(ctx context.Context, v interface{}) (*models.FilterFloat, error) {
+func (ec *executionContext) unmarshalOFilterFloat2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterFloat(ctx context.Context, v interface{}) (*models.FilterFloat, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -7618,7 +7618,7 @@ func (ec *executionContext) unmarshalOFilterFloat2ᚖgithubᚗcomᚋdgllrmoᚋgq
 	return &res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalOFilterId2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterID(ctx context.Context, v interface{}) (*models.FilterID, error) {
+func (ec *executionContext) unmarshalOFilterId2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterID(ctx context.Context, v interface{}) (*models.FilterID, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -7626,7 +7626,7 @@ func (ec *executionContext) unmarshalOFilterId2ᚖgithubᚗcomᚋdgllrmoᚋgqlgo
 	return &res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalOFilterString2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterString(ctx context.Context, v interface{}) (*models.FilterString, error) {
+func (ec *executionContext) unmarshalOFilterString2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐFilterString(ctx context.Context, v interface{}) (*models.FilterString, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -7778,7 +7778,7 @@ func (ec *executionContext) marshalOInt2ᚖint(ctx context.Context, sel ast.Sele
 	return res
 }
 
-func (ec *executionContext) unmarshalOLogicalOperator2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐLogicalOperator(ctx context.Context, v interface{}) (*models.LogicalOperator, error) {
+func (ec *executionContext) unmarshalOLogicalOperator2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐLogicalOperator(ctx context.Context, v interface{}) (*models.LogicalOperator, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -7787,14 +7787,14 @@ func (ec *executionContext) unmarshalOLogicalOperator2ᚖgithubᚗcomᚋdgllrmo�
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalOLogicalOperator2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐLogicalOperator(ctx context.Context, sel ast.SelectionSet, v *models.LogicalOperator) graphql.Marshaler {
+func (ec *executionContext) marshalOLogicalOperator2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐLogicalOperator(ctx context.Context, sel ast.SelectionSet, v *models.LogicalOperator) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return v
 }
 
-func (ec *executionContext) unmarshalOProductFilter2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductFilter(ctx context.Context, v interface{}) (*models.ProductFilter, error) {
+func (ec *executionContext) unmarshalOProductFilter2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductFilter(ctx context.Context, v interface{}) (*models.ProductFilter, error) {
 	if v == nil {
 		return nil, nil
 	}
@@ -7802,7 +7802,7 @@ func (ec *executionContext) unmarshalOProductFilter2ᚖgithubᚗcomᚋdgllrmoᚋ
 	return &res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) unmarshalOProductSort2ᚖgithubᚗcomᚋdgllrmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSort(ctx context.Context, v interface{}) (*models.ProductSort, error) {
+func (ec *executionContext) unmarshalOProductSort2ᚖgithubᚗcomᚋdgmoᚋgqlgoᚋserverᚋgraphᚋmodelsᚐProductSort(ctx context.Context, v interface{}) (*models.ProductSort, error) {
 	if v == nil {
 		return nil, nil
 	}

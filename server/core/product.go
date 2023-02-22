@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/dgllrmo/gqlgo/server/data"
-	"github.com/dgllrmo/gqlgo/server/graph/models"
+	"github.com/dgmo/gqlgo/server/data"
+	"github.com/dgmo/gqlgo/server/graph/models"
 	"github.com/google/uuid"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
