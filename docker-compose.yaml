@@ -1,6 +1,9 @@
 services:
   server:
     build: ./server
+    image: gqlgo-server
+    environment:
+      - PORT=8000
     ports:
       - "8080:8000"
     volumes:
